@@ -10,7 +10,6 @@ const Items = (props) => {
                 <Item key={item.id} add={props.add} delete={props.delete} edit={props.edit} item={item}/>
             )}
         </div>
-
     )
 }
 

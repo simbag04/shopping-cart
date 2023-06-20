@@ -17,7 +17,7 @@ const ShoppingCart = (props) => {
                         <td>{item.brand}</td>
                         <td>{item.color}</td>
                         <td>{item.quantity}</td>
-                        <td>{item.price}</td>
+                        <td>{item.price}</td>                    
                         <td>{item.quantity * item.price}</td>
                     </tr>)}
             </table>
