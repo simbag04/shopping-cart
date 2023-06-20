@@ -1,6 +1,6 @@
 import React from "react";
 import {render, screen } from "@testing-library/react";
-import Item from "./Item";
+import Item from "../components/Item";
 import items from "../data";
 import { act } from "react-dom/test-utils";
 

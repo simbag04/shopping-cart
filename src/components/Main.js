@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import Items from "./components/Items";
-import Navbar from "./components/Navbar";
+import Home from "./Home";
+import Items from "./Items";
+import Navbar from "./Navbar";
 import uniqid from 'uniqid'
-import Totals from "./components/Totals";
-import ShoppingCart from "./components/ShoppingCart";
+import Totals from "./Totals";
+import ShoppingCart from "./ShoppingCart";
 
 const Main = () => {
     const [items, setItems] = useState([

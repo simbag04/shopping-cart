@@ -1,10 +1,10 @@
 import React from "react";
 import {render, screen } from "@testing-library/react";
 import items from "../data";
-import Items from "./Items";
+import Items from "../components/Items";
 import { BrowserRouter } from "react-router-dom";
 
-jest.mock('./Item', () => () => {
+jest.mock('../components/Item', () => () => {
     return <mock-item data-testid="item" />
 });
 
