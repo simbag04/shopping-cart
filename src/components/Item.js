@@ -4,8 +4,9 @@ const Item = (props) => {
         e.target.value = null;
     }
     return (
-        <div key={props.item.id}>
-            <div className="product">{props.item.brand} {props.item.color}</div> 
+        <div key={props.item.id} className="product">
+            <div className="product-title">{props.item.brand} {props.item.color}</div> 
+            <img src={props.item.src} alt="lavender"/>
             <span>
                 <button id={props.item.id} onClick={(e) => props.delete(e.target.id)}>-</button>
                 <input type="number" min="0" id={props.item.id} value={props.item.quantity} 

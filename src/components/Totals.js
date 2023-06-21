@@ -1,8 +1,8 @@
 const Totals = (props) => {
     return (
-        <div>
+        <div className="totals">
             <div>Total Items: {props.totalItems}</div>
-            <div>Total Price: {props.totalPrice}</div>
+            <div>Total Price: ${props.totalPrice}</div>
         </div>
     )
 }

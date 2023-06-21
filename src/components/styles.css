@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#root > div {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    background-color: #517664;
+    color: white;
+}
+
+.navbar ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+a:hover {
+    box-shadow: 0px 0px 5px black;
+}
+
+.navbar a {
+    background-color: #9fd8cb;
+    color: black;
+}
+
+.body a {
+    background-color: #517664;
+    color: white;
+}
+
+.body {
+    background-color: #9fd8cb;
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.page {
+    background-color: #9fd8cb;
+    flex-grow: 1;
+}
+
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(60px, 1fr));
+    grid-auto-flow: row;
+    justify-content: center;
+    justify-items: center;
+    gap: 10px;  
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.product-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    gap: 5px;
+    align-content: center;
+}
+
+.product button {
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #9fd8cb;
+}
+
+span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+span input {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 2em;
+    font-size: 20px;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+table, tr, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 3px;
+}
+
+th {
+    background-color: #517664;
+    color: white;
+}
+
+.totals {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}

@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom"
+import Totals from "./Totals"
 
 const ShoppingCart = (props) => {
     return (
-        <div>
-            <Link to="/items">Go Back</Link>
+        <div className="shopping-cart body">
+            <div className="title">Shopping Cart</div>
             <table>
                 <thead>
                     <tr>
@@ -21,10 +22,12 @@ const ShoppingCart = (props) => {
                             <td>{item.color}</td>
                             <td>{item.quantity}</td>
                             <td>{item.price}</td>                    
-                            <td>{item.quantity * item.price}</td>
+                            <td>${item.quantity * item.price}</td>
                         </tr>)}
                 </tbody>
             </table>
+            <Totals totalItems={props.totalItems} totalPrice={props.totalPrice} />
+            <Link to="/items">Go Back</Link>
         </div>
     )
 }
