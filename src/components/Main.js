@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import Items from "./Items";
 import Navbar from "./Navbar";
@@ -69,7 +69,7 @@ const Main = () => {
     const addToCart = (id) => editCart(id, 1);
     const deleteFromCart = (id) => editCart(id, -1);
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route path="/" element={<Navbar />}>
                     <Route index element={<Home />} />
@@ -85,8 +85,7 @@ const Main = () => {
                     } />
                 </Route>
             </Routes>
-            
-        </BrowserRouter>
+        </HashRouter>
     );
 };
 
